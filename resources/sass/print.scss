@@ -1,0 +1,37 @@
+.onlyForPrint{
+    display: none;
+}
+.print-header{
+    display: flex;
+    margin-bottom: 50px;
+    .printLogo{
+        width: 150px;
+    }
+    .printCompanyName{
+        width: 100%;
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+.pdf-header{
+    margin-bottom: 50px;
+    text-align: center !important;
+    .pdfLogo{
+        width: 70px;
+    }
+}
+
+// Below css will call on print
+@media print {
+    .onlyForPrint {
+        display: block !important;
+    }
+
+    .notForPrint {
+        display: none !important;
+    }
+}
